@@ -12,5 +12,7 @@ class divisibleby5
                 System.out.println("It is divisible by 5");
             }
         }
+        
     }
+
 }
