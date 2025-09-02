@@ -34,7 +34,6 @@ public class StringCompare {
         } else {
             System.out.println("The methods returned different results.");
         }
-
-        
     }
 }
+
