@@ -1,31 +1,21 @@
-class Book {
-    String title;
-    String author;
-    double price;
+class CarRental {
+    String customerName;
+    String carModel;
+    int rentalDays;
+    double totalCost;
 
-    Book() {
-        title = "Unknown";
-        author = "Unknown";
-        price = 0.0;
+    CarRental() {
+        this.customerName = "Unknown";
+        this.carModel = "Standard";
+        this.rentalDays = 1;
+        this.totalCost = 0.0;
     }
 
-    Book(String title, String author, double price) {
-        this.title = title;
-        this.author = author;
-        this.price = price;
-    }
-
-    void displayDetails() {
-        System.out.println("Title: " + title + ", Author: " + author + ", Price: " + price);
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Book b1 = new Book();
-        b1.displayDetails();
-
-        Book b2 = new Book("Java Basics", "James Gosling", 499.99);
-        b2.displayDetails();
+    CarRental(String customerName, String carModel, int rentalDays, double ratePerDay) {
+        this.customerName = customerName;
+        this.carModel = carModel;
+        this.rentalDays = rentalDays;
+        this.totalCost = rentalDays * ratePerDay;
     }
 }
+
