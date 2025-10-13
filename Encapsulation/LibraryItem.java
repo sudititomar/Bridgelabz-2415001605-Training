@@ -1,4 +1,4 @@
-=abstract class LibraryItem {
+abstract class LibraryItem {
     private int itemId;
     private String title;
     private String author;
@@ -42,3 +42,4 @@ class DVD extends LibraryItem implements Reservable {
     public void reserveItem() {}
     public boolean checkAvailability() { return false; }
 }
+
