@@ -1,11 +1,11 @@
 import java.util.Scanner;
 public class CountEven {
     public static int countEven(int[] nums) {
-        int count = 0;
+        int c = 0;
         for (int n : nums) {
-            if (n % 2 == 0) count++;
+            if (n % 2 == 0) c++;
         }
-        return count;
+        return c;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -15,3 +15,4 @@ public class CountEven {
         System.out.println("Number of even numbers: " + countEven(nums));
     }
 }
+
