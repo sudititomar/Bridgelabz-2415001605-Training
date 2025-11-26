@@ -1,3 +1,4 @@
+//Section A (Elementary coding practices)
 import java.util.Scanner;
 public class CountDigits {
     public static int countDigits(int n) {
@@ -15,3 +16,4 @@ public class CountDigits {
         System.out.println("Number of digits: " + countDigits(n));
     }
 }
+
